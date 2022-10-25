@@ -6,3 +6,4 @@ imdb movies
 ![Simulator Screen Shot - iPhone 8 - 2022-10-25 at 18 43 02](https://user-images.githubusercontent.com/3538556/197804653-c26eb553-50fd-4340-9578-734f5537dbb1.png)
 ![Simulator Screen Shot - iPhone 8 - 2022-10-25 at 18 42 55](https://user-images.githubusercontent.com/3538556/197804658-1dfae3e5-1afb-4ecc-bf68-8f897e34dec8.png)
 ![Simulator Screen Shot - iPhone 8 - 2022-10-25 at 18 42 49](https://user-images.githubusercontent.com/3538556/197804664-aab0dcd4-22fc-48d7-850c-748508a73bd1.png)
+![Simulator Screen Shot - iPhone 8 - 2022-10-25 at 20 12 07](https://user-images.githubusercontent.com/3538556/197804901-9a297953-785b-4a2b-9809-51c9dbc4cacc.png)
