@@ -13,7 +13,6 @@ class MovieDetailsCell: UITableViewCell {
     @IBOutlet weak var ratingBar: RatingBar!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var yearLabel: UILabel!
     @IBOutlet weak var tagList: TagListView!
 
     override func awakeFromNib() {
@@ -25,9 +24,16 @@ class MovieDetailsCell: UITableViewCell {
             movieImageView.loadImageWithUrl(url)
         }
         ratingBar.rating = movie.rating
+        
+        let attrs = [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 24)]
+        let yearString = NSMutableAttributedString(string:movie.year, attributes:attrs)
+        
+        let attrs2 = [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 24)]
+        let titleString = NSMutableAttributedString(string:movie.title, attributes:attrs2)
+        
+        titleString.append(yearString)
         dateLabel.text = movie.dateAndTime
-        nameLabel.text = movie.title
-        yearLabel.text = movie.year
+        nameLabel.attributedText = titleString
         tagList.removeAllTags()
         tagList.addTags(movie.genres)
     }

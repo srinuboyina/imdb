@@ -40,8 +40,8 @@ class MovieDetailsViewController: UIViewController {
     
     @IBAction func setFavourite() {
         movie.favourite = !(movie.favourite ?? false)
-        let index = SharedMovies.shared.movies.firstIndex(where: { movie in
-            return movie.title == movie.title
+        let index = SharedMovies.shared.movies.firstIndex(where: { movie1 in
+            return movie1.title == movie.title
         })
         if let index = index {
             SharedMovies.shared.movies[index].favourite = movie.favourite

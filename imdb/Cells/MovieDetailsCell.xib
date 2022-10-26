@@ -42,20 +42,17 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qiL-BP-sar">
-                        <rect key="frame" x="94" y="392" width="63.333333333333343" height="29"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qiL-BP-sar">
+                        <rect key="frame" x="40" y="392" width="251" height="28.666666666666686"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="iPR-2e-ffh"/>
+                        </constraints>
                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQf-Bk-ebe">
-                        <rect key="frame" x="165.33333333333334" y="392" width="80.666666666666657" height="28"/>
-                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JjW-8b-4SK" customClass="TagListView" customModule="imdb" customModuleProvider="target">
-                        <rect key="frame" x="20" y="431" width="291" height="59"/>
+                        <rect key="frame" x="20" y="430.66666666666669" width="291" height="59.333333333333314"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="tagBackgroundColor">
@@ -80,21 +77,19 @@
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="aQf-Bk-ebe" firstAttribute="leading" secondItem="qiL-BP-sar" secondAttribute="trailing" constant="8" symbolic="YES" id="1Aa-GM-WDB"/>
                     <constraint firstItem="2d4-nM-svE" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="31v-UL-uI4"/>
-                    <constraint firstItem="aQf-Bk-ebe" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="40" id="4wY-al-jvC"/>
                     <constraint firstItem="Pi6-5E-aD0" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="5hj-8Z-MFr"/>
                     <constraint firstAttribute="bottom" secondItem="JjW-8b-4SK" secondAttribute="bottom" id="ESi-uP-5aQ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="qiL-BP-sar" secondAttribute="trailing" constant="20" id="FzA-ko-knM"/>
                     <constraint firstItem="qiL-BP-sar" firstAttribute="top" secondItem="MPi-ai-Hri" secondAttribute="bottom" constant="10" id="M8k-H0-GGq"/>
                     <constraint firstItem="MPi-ai-Hri" firstAttribute="top" secondItem="Pi6-5E-aD0" secondAttribute="bottom" constant="8" symbolic="YES" id="NIm-5V-uQh"/>
                     <constraint firstItem="JjW-8b-4SK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="QHj-gS-Ped"/>
-                    <constraint firstItem="qiL-BP-sar" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="-40" id="fXd-7a-d8L"/>
+                    <constraint firstItem="qiL-BP-sar" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="RPZ-bg-SjM"/>
                     <constraint firstItem="JjW-8b-4SK" firstAttribute="top" secondItem="qiL-BP-sar" secondAttribute="bottom" constant="10" id="hH7-un-ZTy"/>
                     <constraint firstItem="2d4-nM-svE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="30" id="hgq-6D-WSg"/>
                     <constraint firstAttribute="trailing" secondItem="JjW-8b-4SK" secondAttribute="trailing" constant="20" id="nSy-kK-Xoi"/>
                     <constraint firstItem="MPi-ai-Hri" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="nxZ-uW-XmC"/>
                     <constraint firstItem="Pi6-5E-aD0" firstAttribute="top" secondItem="2d4-nM-svE" secondAttribute="bottom" constant="8" symbolic="YES" id="o9z-W5-mxu"/>
-                    <constraint firstItem="aQf-Bk-ebe" firstAttribute="top" secondItem="qiL-BP-sar" secondAttribute="top" id="ydA-nS-IDJ"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
@@ -104,7 +99,6 @@
                 <outlet property="nameLabel" destination="qiL-BP-sar" id="Asz-5G-Mr6"/>
                 <outlet property="ratingBar" destination="Pi6-5E-aD0" id="tuI-Wo-RBl"/>
                 <outlet property="tagList" destination="JjW-8b-4SK" id="X9g-bT-wyh"/>
-                <outlet property="yearLabel" destination="aQf-Bk-ebe" id="Okw-Mc-E61"/>
             </connections>
             <point key="canvasLocation" x="143.84615384615384" y="172.03791469194312"/>
         </tableViewCell>
