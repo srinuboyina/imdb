@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		189AFEEB2909227C0078FBB4 /* MovieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189AFEEA2909227C0078FBB4 /* MovieTests.swift */; };
+		189AFEED290922A60078FBB4 /* MoviesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189AFEEC290922A60078FBB4 /* MoviesViewModelTests.swift */; };
 		189EAAE72905060900296FFA /* DirectorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189EAAE52905060900296FFA /* DirectorCell.swift */; };
 		189EAAE82905060900296FFA /* DirectorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 189EAAE62905060900296FFA /* DirectorCell.xib */; };
 		189EAAEA29054B3100296FFA /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189EAAE929054B3100296FFA /* UIButton+Extension.swift */; };
@@ -71,6 +73,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		189AFEEA2909227C0078FBB4 /* MovieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTests.swift; sourceTree = "<group>"; };
+		189AFEEC290922A60078FBB4 /* MoviesViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewModelTests.swift; sourceTree = "<group>"; };
 		189EAAE52905060900296FFA /* DirectorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectorCell.swift; sourceTree = "<group>"; };
 		189EAAE62905060900296FFA /* DirectorCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DirectorCell.xib; sourceTree = "<group>"; };
 		189EAAE929054B3100296FFA /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
@@ -193,6 +197,8 @@
 			isa = PBXGroup;
 			children = (
 				18B0BD8828FFD9970021CA23 /* imdbTests.swift */,
+				189AFEEA2909227C0078FBB4 /* MovieTests.swift */,
+				189AFEEC290922A60078FBB4 /* MoviesViewModelTests.swift */,
 			);
 			path = imdbTests;
 			sourceTree = "<group>";
@@ -464,6 +470,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				189AFEEB2909227C0078FBB4 /* MovieTests.swift in Sources */,
+				189AFEED290922A60078FBB4 /* MoviesViewModelTests.swift in Sources */,
 				18B0BD8928FFD9970021CA23 /* imdbTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
